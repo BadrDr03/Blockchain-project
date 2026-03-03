@@ -76,5 +76,11 @@ A. Cas d'Utilisation (Use Case)
 Le diagramme suivant illustre les interactions entre les différents acteurs (Ministère, Police, Juge) et les fonctionnalités de la plateforme.
 
 ![Import OVA](https://github.com/user-attachments/assets/276fea61-8750-424e-83ff-7a20e5e94c47) 
-.
+
+
+B. Diagramme de Séquence (Workflow Technique)
+Ce diagramme détaille le flux de données lors de l'enregistrement d'une preuve, garantissant que le fichier est stocké sur IPFS tandis que son empreinte (Hash) est sécurisée sur la Blockchain.
+
+![Import OVA](https://github.com/user-attachments/assets/7d23351d-ae17-48f5-b92b-5923f0957bdf)
+
 
