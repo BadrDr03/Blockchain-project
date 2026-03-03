@@ -59,7 +59,7 @@ Le système repose sur une gouvernance stricte (Role-Based Access Control) :
 
 ---
 
-🔄 Fonctionnement 
+🔄 Fonctionnement (Workflow)
 
 1. Enregistrement : Le Ministère autorise l’adresse Wallet de l’officier.
 2. Dépôt : L’officier télécharge une preuve. Le système génère un CID (via IPFS) et un hash (SHA-256).
@@ -67,3 +67,13 @@ Le système repose sur une gouvernance stricte (Role-Based Access Control) :
 4. Vérification : Le juge accède au dossier. La DApp télécharge le fichier depuis IPFS, recalcule son hash et le compare avec celui de la blockchain.
   * ✅ Match : Preuve Intégrée.
   * ❌ Mismatch : Preuve Corrompue.
+
+--- 
+
+📊 Diagrammes du Système
+
+A. Cas d'Utilisation (Use Case)
+Le diagramme suivant illustre les interactions entre les différents acteurs (Ministère, Police, Juge) et les fonctionnalités de la plateforme.
+
+![Import OVA](https://github.com/user-attachments/assets/276fea61-8750-424e-83ff-7a20e5e94c47)
+
