@@ -81,7 +81,9 @@ Authentication: Signatures numériques via les clés privées Ethereum.
 Le système repose sur une gouvernance stricte (Role-Based Access Control) :
 
 1-Ministère ( Admin	/ Super-User ) :	Gère la Whitelist (Ajout/Révocation des officiers).
+
 2-Officier ( Police /	Uploader ) :	Calcule le Hash, upload sur IPFS et enregistre sur la Blockchain.
+
 3-Juge ( Expert /	Vérificateur	) : Consulte les preuves et valide leur intégrité via la DApp.
 
 
@@ -134,5 +136,15 @@ Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm +
 2.Initialisation du projet Hardhat 
 
 ![Import OVA](https://github.com/user-attachments/assets/99466fe4-4fb9-4da1-80f9-3bd54eca9eee)
+
+![Import OVA](https://github.com/user-attachments/assets/5c8c465a-9493-4aa2-82cf-425bed921bd2)
+
+![import OVA](https://github.com/user-attachments/assets/c250b7c7-61a0-47ca-b4ca-ec5e3f5bc3c5)
+
+3-Installation OpenZeppelin
+
+![Import OVA](https://github.com/user-attachments/assets/88101795-92c3-4c73-9f74-0416debca6c0)
+
+
 
 
