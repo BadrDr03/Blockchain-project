@@ -111,4 +111,22 @@ Ce diagramme détaille le flux de données lors de l'enregistrement d'une preuve
 
 ![Import OVA](https://github.com/user-attachments/assets/7d23351d-ae17-48f5-b92b-5923f0957bdf)
 
+---
 
+🚀 6. Installation et configuration
+
+Cette section décrit les étapes nécessaires pour mettre en place l’environnement de développement local.
+
+📋 Prérequis
+
+* Node.js (version 18.x ou supérieure)
+* npm (installé avec Node.js)
+* VS Code (ou un autre éditeur de texte)
+
+🛠️ Étapes d’installation
+
+1. Initialisation du dossier racine
+Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm + hardhat .
+
+
+![Import OVA](https://github.com/user-attachments/assets/35393d2d-4823-45d6-88b8-603dbdca3fa1)
