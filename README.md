@@ -84,3 +84,36 @@ Ce diagramme détaille le flux de données lors de l'enregistrement d'une preuve
 ![Import OVA](https://github.com/user-attachments/assets/7d23351d-ae17-48f5-b92b-5923f0957bdf)
 
 
+
+[sequenceDiagram
+    autonumber
+    actor M as Ministère (Admin)
+    actor P as Officier de Police
+    participant F as Frontend (DApp)
+    participant BC as Smart Contract
+    participant I as IPFS (Storage)
+    actor J as Juge (Vérificateur)
+
+    Note over M, BC: 1. Phase d'Autorisation (RBAC)
+    M->>F: Ajouter l'adresse du Policier
+    F->>BC: grantRole(POLICE_ROLE, wallet_address)
+    BC-->>F: Role accordé ✅
+
+    Note over P, I: 2. Phase de Dépôt de Preuve
+    P->>F: Sélectionner Fichier + CaseID
+    F->>F: Générer Hash SHA-256 (Local)
+    F->>I: Téléverser le fichier original
+    I-->>F: Retourner le CID (Lien permanent)
+    F->>BC: addEvidence(CID, Hash, CaseID)
+    BC->>BC: Vérifier Identité (msg.sender)
+    BC-->>F: Preuve Enregistrée (Timestamp)
+
+    Note over J, BC: 3. Phase de Jugement (Vérification)
+    J->>F: Saisir CaseID ou CID
+    F->>BC: getEvidenceDetails(CID)
+    BC-->>F: Retourne Hash_Original + Timestamp + Uploader
+    F->>I: Télécharger le fichier via CID
+    I-->>F: Fichier reçu
+    F->>F: Calculer Hash actuel du fichier reçu
+    F->>F: Comparer (Hash_Original == Hash_Actuel)
+    F-->>J: Résultat: Authentique ✅ ou Alteré ❌]
