@@ -75,5 +75,6 @@ Le système repose sur une gouvernance stricte (Role-Based Access Control) :
 A. Cas d'Utilisation (Use Case)
 Le diagramme suivant illustre les interactions entre les différents acteurs (Ministère, Police, Juge) et les fonctionnalités de la plateforme.
 
-![Import OVA](https://github.com/user-attachments/assets/276fea61-8750-424e-83ff-7a20e5e94c47)
+![Import OVA](https://github.com/user-attachments/assets/276fea61-8750-424e-83ff-7a20e5e94c47) 
+.
 
