@@ -126,7 +126,13 @@ Cette section décrit les étapes nécessaires pour mettre en place l’environn
 🛠️ Étapes d’installation
 
 1. Initialisation du dossier racine
-Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm + hardhat .
+Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm + Hardhat .
 
 
 ![Import OVA](https://github.com/user-attachments/assets/35393d2d-4823-45d6-88b8-603dbdca3fa1)
+
+2.Initialisation du projet Hardhat 
+
+![Import OVA](https://github.com/user-attachments/assets/99466fe4-4fb9-4da1-80f9-3bd54eca9eee)
+
+
