@@ -36,15 +36,43 @@ LexChain transforme la preuve numérique en un actif immuable :
 
 ---
 
-🏗️ Architecture Technique
+🏗️ Architecture Technique 
 
-Le projet utilise une stack technologique moderne et professionnelle :
+LexChain repose sur une architecture décentralisée en couches (N-Tier DApp Architecture), garantissant sécurité, scalabilité et réduction des coûts de transaction (Gas optimization).
 
-* Blockchain : Ethereum (Solidity 0.8.x).
-* Framework de Dev : Hardhat (environnement de test et de déploiement).
-* Stockage : IPFS (InterPlanetary File System) via Pinata.
-* Frontend : Next.js / Tailwind CSS / Ethers.js.
-* Sécurité : OpenZeppelin (Role-Based Access Control).
+1. Smart Contract Layer 
+ 
+Language: Solidity.
+
+Framework: Hardhat (pour le développement, les tests unitaires et le déploiement).
+
+Security Standard: OpenZeppelin AccessControl (RBAC) pour la gestion stricte des rôles (Ministère, Police, Juge).
+
+Logic: Gestion de l'immuabilité des empreintes (Hashes) et de la traçabilité des dépôts.
+
+2. Decentralized Storage Layer 
+   
+Protocol: IPFS (InterPlanetary File System).
+
+Provider: Pinata SDK.
+
+Logic: Stockage des fichiers volumineux (vidéos, photos). Seul le CID (Content Identifier) est stocké sur la Blockchain pour optimiser les coûts.
+
+3. Application Layer (Frontend / Web3)
+   
+Framework: Next.js 14 ou React.js.
+
+Styling: Tailwind CSS + Shadcn/UI .
+
+Blockchain Interaction: Ethers.js v6 ou Wagmi/Viem.
+
+Wallet: MetaMask (Fournisseur d'identité et signature de transactions).
+
+4. Security & Cryptography
+   
+Hashing Algorithm: SHA-256 (calculé côté client pour garantir l'intégrité avant même l'upload).
+
+Authentication: Signatures numériques via les clés privées Ethereum.
 
 ---
 
@@ -64,7 +92,7 @@ Le système repose sur une gouvernance stricte (Role-Based Access Control) :
 1. Enregistrement : Le Ministère autorise l’adresse Wallet de l’officier.
 2. Dépôt : L’officier télécharge une preuve. Le système génère un CID (via IPFS) et un hash (SHA-256).
 3. Validation Blockchain : Une transaction est envoyée pour lier le CaseID, le CID et le Hash à l’adresse de l’officier avec un Timestamp.
-4. Vérification : Le juge accède au dossier. La DApp télécharge le fichier depuis IPFS, recalcule son hash et le compare avec celui de la blockchain.
+4. Vérification : Le juge accède au dossier. La DApp télécharge le fichier depuis IPFS, recalcule son hash (frontend) et le compare avec celui de la blockchain.
   * ✅ Match : Preuve Intégrée.
   * ❌ Mismatch : Preuve Corrompue.
 
