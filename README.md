@@ -80,11 +80,11 @@ Authentication: Signatures numériques via les clés privées Ethereum.
 
 Le système repose sur une gouvernance stricte (Role-Based Access Control) :
 
-1-Ministère ( Admin	/ Super-User ) :	Gère la Whitelist (Ajout/Révocation des officiers).
+1-Ministère ( `DEFAULT_ADMIN_ROLE`	/ Super-User ) :	Administrateur du contrat. Il est le seul habilité à révoquer ou attribuer des droits aux autres acteurs.
 
-2-Officier ( Police /	Uploader ) :	Calcule le Hash, upload sur IPFS et enregistre sur la Blockchain.
+2-Officier ( `POLICE_ROLE` /	Uploader ) :	Responsable de la saisie des preuves (Upload vers IPFS et enregistrement du Hash sur la Blockchain).
 
-3-Juge ( Expert /	Vérificateur	) : Consulte les preuves et valide leur intégrité via la DApp.
+3-Juge ( `JUDGE_ROLE` /	Vérificateur	) : Consultation et vérification de l'authenticité des preuves lors des procès.
 
 
 ---
@@ -148,7 +148,7 @@ Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm +
 
 ---
 
- 7. Développement du Smart Contract (LexChain.sol)
+ ⚖️ 7. Développement du Smart Contract (LexChain.sol)
 
  Cette étape marque le début du développement de la logique métier sur la blockchain. Le contrat LexChain est le cœur du système, gérant l’immuabilité et l’accès sécurisé aux preuves.
 
@@ -170,5 +170,7 @@ Pour transformer le code Solidity en bytecode compréhensible par la machine vir
 
 ![Import OVA](https://github.com/user-attachments/assets/91cb7c09-5cc3-4c60-ba88-948e5122093c)
 
+![Import OVA](https://github.com/user-attachments/assets/26e3b4fb-2efa-4fc3-acd6-d8a5857e139e)
 
+Le contrat a été compilé avec succès en utilisant le compilateur Solidity `0.8.28`.
 
