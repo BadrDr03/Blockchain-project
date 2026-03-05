@@ -146,5 +146,29 @@ Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm +
 ![Import OVA](https://github.com/user-attachments/assets/88101795-92c3-4c73-9f74-0416debca6c0)
 
 
+---
+
+ 7. Développement du Smart Contract (LexChain.sol)
+
+ Cette étape marque le début du développement de la logique métier sur la blockchain. Le contrat LexChain est le cœur du système, gérant l’immuabilité et l’accès sécurisé aux preuves.
+
+ Description du Contrat
+
+Le contrat LexChain.sol utilise les standards d’OpenZeppelin pour garantir une sécurité maximale :
+
+* Access Control: Seuls les utilisateurs ayant le rôle POLICE_ROLE peuvent enregistrer des preuves.
+* Struct Evidence : Stocke de manière structurée le hash du fichier (Intégrité) et le CID d’IPFS (stockage décentralisé).
+* Immuabilité : Une fois enregistrée, une preuve ne peut ni être modifiée ni supprimée.
+---
+Commande de Compilation
+
+Pour transformer le code Solidity en bytecode compréhensible par la machine virtuelle Ethereum (EVM), nous utilisons :
+
+"" npx hardhat compile ""
+
+![Import OVA](https://github.com/user-attachments/assets/f8d0e3c3-d5ad-4607-8204-fde1a2ea3522)
+
+![Import OVA](https://github.com/user-attachments/assets/91cb7c09-5cc3-4c60-ba88-948e5122093c)
+
 
 
