@@ -64,7 +64,7 @@ Framework: Next.js 14 ou React.js.
 
 Styling: Tailwind CSS + Shadcn/UI .
 
-Blockchain Interaction: Ethers.js v6 ou Wagmi/Viem.
+Blockchain Interaction: Ethers.js v5 ou Wagmi/Viem.
 
 Wallet: MetaMask (Fournisseur d'identité et signature de transactions).
 
@@ -145,6 +145,13 @@ Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm +
 
 ![Import OVA](https://github.com/user-attachments/assets/88101795-92c3-4c73-9f74-0416debca6c0)
 
+🔧 Résolution des conflits de modules (CommonJS vs ESM)
+
+Afin d'éviter les erreurs de type ERR_REQUIRE_ESM lors de l'utilisation des plugins Hardhat, l'environnement a été configuré pour forcer l'utilisation du système de modules CommonJS.
+
+Action effectuée : Ajout de "type": "commonjs" dans le package.json.
+
+Standardisation : Utilisation de Hardhat ^2.22.0 et Hardhat-Toolbox ^2.0.2 pour garantir une compatibilité ascendante avec les scripts de déploiement.
 
 ---
 
