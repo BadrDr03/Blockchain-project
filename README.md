@@ -205,4 +205,14 @@ Le script deploy.js publie le contrat sur notre réseau local.
 
 ---
 
+📊 8. Analyse des résultats techniques (Audit Trail)
++ Consommation de Gas
+Le déploiement a utilisé 1,221,322 units de Gas.
+Pourquoi ? : Cela représente l'énergie nécessaire pour inscrire la logique de sécurité de LexChain sur la blockchain.
 
++ Traçabilité et Sécurité
+En tant que futur SOC Analyst, l'analyse des logs est cruciale :
+
+Contract Address : 0x5FbDB2315678afecb367f032d93F642f64180aa3 (L'ID unique de notre contrat).
+
+Transaction Hash : Chaque déploiement génère une preuve immuable de l'opération.
