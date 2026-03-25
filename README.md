@@ -141,7 +141,7 @@ Créez un dossier pour le projet et initialisez le gestionnaire de paquets npm +
 
 ![import OVA](https://github.com/user-attachments/assets/c250b7c7-61a0-47ca-b4ca-ec5e3f5bc3c5)
 
-3-Installation OpenZeppelin
+3-Installation OpenZeppelin.
 
 ![Import OVA](https://github.com/user-attachments/assets/88101795-92c3-4c73-9f74-0416debca6c0)
 
