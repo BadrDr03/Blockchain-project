@@ -181,3 +181,28 @@ Pour transformer le code Solidity en bytecode compréhensible par la machine vir
 
 Le contrat a été compilé avec succès en utilisant le compilateur Solidity `0.8.28`.
 
+---
+
+⛓️ 7. Déploiement sur le réseau local (Hardhat)
+Pour tester LexChain, nous simulons une blockchain privée sur notre machine.
+
+ Étape 1 : Lancement du nœud local
+Cette commande simule le réseau Ethereum avec 20 comptes de test crédités de 10,000 ETH.
+
+"npx hardhat node"
+
+![Import OVA](https://github.com/user-attachments/assets/5080eac5-d555-41af-a128-4883599c9401)
+
+![Import OVA](https://github.com/user-attachments/assets/51e952a3-0421-43b7-81b8-201993e4cad8)
+
+
+Étape 2 : Exécution du script de déploiement
+Le script deploy.js publie le contrat sur notre réseau local.
+
+"npx hardhat run scripts/deploy.js --network localhost"
+
+![Import OVA](https://github.com/user-attachments/assets/8d7414db-e9ed-440a-a7ae-03f0b82504b8)
+
+---
+
+
