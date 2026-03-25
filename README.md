@@ -177,7 +177,6 @@ Pour transformer le code Solidity en bytecode compréhensible par la machine vir
 
 ![Import OVA](https://github.com/user-attachments/assets/91cb7c09-5cc3-4c60-ba88-948e5122093c)
 
-![Import OVA](https://github.com/user-attachments/assets/26e3b4fb-2efa-4fc3-acd6-d8a5857e139e)
 
 Le contrat a été compilé avec succès en utilisant le compilateur Solidity `0.8.28`.
 
